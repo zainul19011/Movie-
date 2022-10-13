@@ -68,7 +68,7 @@ async function add_to_dom_trending () {
     const data = await get_trending_movies()
     console.log(data);
 
-    trending_el.innerHTML = data.slice(0, 11).map(e => {
+    trending_el.innerHTML = data.slice(0, 20).map(e => {
         return `
             <div class="card" data-id="${e.id}">
                 <div class="img">
